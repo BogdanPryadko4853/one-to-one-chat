@@ -33,28 +33,29 @@
 ## Как запустить проект
 1. **Клонирование репозитория**
    
-bash
+
    git clone https://github.com/yourusername/one-to-one-chat.git
+   
    cd one-to-one-chat
    
 
-2. **Настройка MongoDB**
+3. **Настройка MongoDB**
    Убедитесь, что у вас установлен MongoDB.
 
    Создайте базу данных chat_app и пользователя с правами доступа:
    
-bash
    use chat_app
+   
    db.createUser({ user: "bogdan", pwd: "bogdan", roles: ["readWrite"] })
    
 
-3. **Запуск приложения**
+5. **Запуск приложения**
    Убедитесь, что у вас установлен Java (минимум версия 8) и Maven.
 
    Соберите и запустите проект:
    
-bash
    mvn clean install
+   
    mvn spring-boot:run
    
    Приложение будет доступно по адресу: [http://localhost:8080](http://localhost:8080).
@@ -76,4 +77,3 @@ bash
 
 ## Автор
 [Bogdanpryadko1@gmail.com]  
-[Ссылка на GitHub](https://github.com/yourusername)
